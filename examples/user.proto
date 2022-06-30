@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option go_package = "github.com/plsenp/protoc-gen-go-tag/api;api";
+
+message Example {
+    // @tag: uri;xml;yml;json:override,id;form:uid
+    int64 id = 1;
+    // @tag: uri: uname; xml;json:test,ttag
+    string name = 2;
+    // @tag: binding:gt=0,lt=200 
+    int64 age = 3;
+}
